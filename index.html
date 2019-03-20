@@ -55,8 +55,11 @@
         scene.add(mesh);
         meshX += 1;
       }
-      var light = new THREE.PointLight(0xffffff, 1, 500);
-      light.position.set(10, 0, 25);
+      var light = new THREE.PointLight(0xffffff, 1, 1000);
+      light.position.set(0, 0, 0);
+      scene.add(light);
+      var light = new THREE.PointLight(0xffffff, 2, 1000);
+      light.position.set(0, 0, 25);
       scene.add(light);
 
       var render = () => {
